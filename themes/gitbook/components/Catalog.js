@@ -72,7 +72,7 @@ const Catalog = ({ post }) => {
       <div className='w-full hidden md:block'><i className='mr-1 fas fa-stream' />{locale.COMMON.TABLE_OF_CONTENTS}</div>
       <div
         id='toc-wrapper'
-        className='toc-wrapper overflow-y-auto my-2 max-h-max overscroll-none scroll-hidden'>
+        className='toc-wrapper overflow-y-auto my-2 max-h-[80vh] overscroll-none scroll-hidden'>
         <nav className='h-full  text-black'>
           {toc?.map(tocItem => {
             const id = uuidToId(tocItem.id)
